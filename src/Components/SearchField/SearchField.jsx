@@ -1,9 +1,15 @@
 import React from "react";
+import "./SearchField.scss";
 
-const SearchField = () => {
+const SearchField = ({ searchChange }) => {
   return (
     <div>
-      <h2>SearchField</h2>
+      <input
+        className="input-field"
+        type="text"
+        placeholder="Search Kittens"
+        onChange={searchChange}
+      />
     </div>
   );
 };

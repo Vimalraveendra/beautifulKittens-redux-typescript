@@ -8,11 +8,17 @@ class App extends React.Component {
     kittens: [],
     InputValue: ""
   };
+  onSearchChange = event => {
+    const newInput = event.target.value;
+    console.log("event", newInput);
+    this.setState({ InputValue: newInput });
+  };
   render() {
+    console.log("inputvalue", this.state.Inputvalue);
     return (
       <div className="App">
         <h1>Beautiful Kittens</h1>
-        <SearchField />
+        <SearchField searchChange={this.onSearchChange} />
         <KittensList />
       </div>
     );
