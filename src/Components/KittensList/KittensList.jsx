@@ -11,6 +11,7 @@ const KittensList = ({ kittensArray }) => {
           name={kitten.name}
           phone={kitten.phone}
           email={kitten.email}
+          website={kitten.website}
         />
       ))}
     </div>

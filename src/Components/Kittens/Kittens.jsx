@@ -1,9 +1,18 @@
 import React from "react";
 
-const Kittens = () => {
+const Kittens = ({ name, id, email, phone, website }) => {
   return (
     <div>
-      <h2>Kittens</h2>
+      <img
+        src={`https://robohash.org/${id}?set=set4&size=200x200&bgset=bg2`}
+        alt="kittens"
+      />
+      <div>
+        <h3>Name:{name}</h3>
+        <h5>Email:{email}</h5>
+        <p>Website:{website}</p>
+        <p>Phone:{phone}</p>
+      </div>
     </div>
   );
 };
