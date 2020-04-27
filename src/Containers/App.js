@@ -36,7 +36,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Beautiful Kittens</h1>
-        <SearchField searchChange={this.onSearchChange} />
+        <SearchField />
         <KittensList kittensArray={this.filterKittens()} />
       </div>
     );

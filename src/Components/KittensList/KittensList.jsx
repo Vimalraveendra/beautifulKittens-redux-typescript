@@ -1,6 +1,7 @@
 import React from "react";
 import Kittens from "../Kittens/Kittens";
 import "./KittensList.scss";
+import { connect } from "react-redux";
 
 const KittensList = ({ kittensArray }) => {
   return (
@@ -19,4 +20,7 @@ const KittensList = ({ kittensArray }) => {
   );
 };
 
-export default KittensList;
+const mapStateToProps = ({ kittensArray: { kittensArray } }) => ({
+  kittensArray
+});
+export default connect(mapStateToProps)(KittensList);
