@@ -5,7 +5,7 @@ import KittensList from "../Components/KittensList/KittensList";
 
 class App extends React.Component {
   state = {
-    kittens: [],
+    kittensArray: [],
     InputValue: ""
   };
   onSearchChange = event => {
@@ -13,13 +13,23 @@ class App extends React.Component {
     console.log("event", newInput);
     this.setState({ InputValue: newInput });
   };
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => response.json())
+      .then(users =>
+        this.setState({
+          kittensArray: users
+        })
+      );
+  }
   render() {
     console.log("inputvalue", this.state.Inputvalue);
+    console.log("kittens", this.state.kittensArray);
     return (
       <div className="App">
         <h1>Beautiful Kittens</h1>
         <SearchField searchChange={this.onSearchChange} />
-        <KittensList />
+        <KittensList kittensArray={this.state.kittensArray} />
       </div>
     );
   }
