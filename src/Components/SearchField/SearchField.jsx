@@ -3,14 +3,14 @@ import "./SearchField.scss";
 
 const SearchField = ({ searchChange }) => {
   return (
-    <div>
+    <React.Fragment>
       <input
         className="input-field"
         type="text"
         placeholder="Search Kittens"
         onChange={searchChange}
       />
-    </div>
+    </React.Fragment>
   );
 };
 

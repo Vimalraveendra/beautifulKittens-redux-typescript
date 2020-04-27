@@ -1,0 +1,22 @@
+.kittens {
+  background-color: #c095da;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+h3 {
+  color: rgb(0, 26, 255);
+}
+
+p {
+  color: rgba(189, 35, 24, 0.865);
+}

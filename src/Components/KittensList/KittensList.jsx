@@ -1,9 +1,10 @@
 import React from "react";
 import Kittens from "../Kittens/Kittens";
+import "./KittensList.scss";
 
 const KittensList = ({ kittensArray }) => {
   return (
-    <div>
+    <div className="kittens-list">
       {kittensArray.map(kitten => (
         <Kittens
           key={kitten.id}

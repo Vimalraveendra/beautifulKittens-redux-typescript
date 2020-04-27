@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import SearchField from "../Components/SearchField/SearchField";
 import KittensList from "../Components/KittensList/KittensList";
 
@@ -12,6 +12,14 @@ class App extends React.Component {
     const newInput = event.target.value;
     console.log("event", newInput);
     this.setState({ InputValue: newInput });
+  };
+
+  filterKittens = () => {
+    return this.state.kittensArray.filter(kitten => {
+      return kitten.name
+        .toLowerCase()
+        .includes(this.state.InputValue.toLocaleLowerCase());
+    });
   };
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -29,7 +37,7 @@ class App extends React.Component {
       <div className="App">
         <h1>Beautiful Kittens</h1>
         <SearchField searchChange={this.onSearchChange} />
-        <KittensList kittensArray={this.state.kittensArray} />
+        <KittensList kittensArray={this.filterKittens()} />
       </div>
     );
   }

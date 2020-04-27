@@ -1,8 +1,9 @@
 import React from "react";
+import "./Kittens.scss";
 
 const Kittens = ({ name, id, email, phone, website }) => {
   return (
-    <div>
+    <div className="kittens">
       <img
         src={`https://robohash.org/${id}?set=set4&size=200x200&bgset=bg2`}
         alt="kittens"
