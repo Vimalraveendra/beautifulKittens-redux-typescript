@@ -3,6 +3,6 @@ import { searchChangeReducer } from "../Redux/SearchField/SearchField.reducer";
 import { combineReducers } from "redux";
 
 export default combineReducers({
-  kittensArray: requestKittensReducer,
+  kittensList: requestKittensReducer,
   searchInput: searchChangeReducer
 });

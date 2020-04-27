@@ -1,7 +1,7 @@
 import kittensActionsTypes from "./Kittens.types";
 
 const initialState = {
-  kittens: [],
+  kittensArray: [],
   isPending: false
 };
 
@@ -16,7 +16,7 @@ export const requestKittensReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         isPending: false,
-        kittens: action.payload
+        kittensArray: action.payload
       };
 
     case kittensActionsTypes.REQUEST_KITTENS_FAILED:

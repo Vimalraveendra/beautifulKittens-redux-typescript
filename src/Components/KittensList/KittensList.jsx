@@ -3,7 +3,11 @@ import Kittens from "../Kittens/Kittens";
 import "./KittensList.scss";
 import { connect } from "react-redux";
 
-const KittensList = ({ kittensArray }) => {
+const KittensList = ({ kittensArray, inputValue }) => {
+  kittensArray = kittensArray.filter(kitten => {
+    return kitten.name.toLowerCase().includes(inputValue.toLocaleLowerCase());
+  });
+
   return (
     <div className="kittens-list">
       {kittensArray.map(kitten => (
@@ -20,7 +24,11 @@ const KittensList = ({ kittensArray }) => {
   );
 };
 
-const mapStateToProps = ({ kittensArray: { kittensArray } }) => ({
-  kittensArray
+const mapStateToProps = ({
+  kittensList: { kittensArray },
+  searchInput: { inputValue }
+}) => ({
+  kittensArray,
+  inputValue
 });
 export default connect(mapStateToProps)(KittensList);

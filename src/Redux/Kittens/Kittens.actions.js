@@ -13,4 +13,11 @@ export const requestKittensFailed = error => ({
   type: kittensActionsTypes.REQUEST_KITTENS_FAILED,
   payload: error
 });
-export const requestKittens = () => dispatch => {};
+
+export const requestKittens = () => dispatch => {
+  dispatch(requestKittensPending());
+  fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(data => dispatch(requestKittensSuccess(data)))
+    .catch(error => dispatch(requestKittensFailed(error)));
+};
