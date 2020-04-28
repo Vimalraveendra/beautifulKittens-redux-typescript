@@ -24,7 +24,7 @@ export interface kittensPendingAction {
 
 export interface kittensSuccessAction {
   type: typeof REQUEST_KITTENS_SUCCESS;
-  payload: IKittensArray;
+  payload: Array<IKittens>;
 }
 
 export interface kittensFailedAction {
