@@ -1,7 +1,14 @@
 import React from "react";
 import "./Kittens.scss";
+import { IKittens } from "../../Redux/Kittens/Kittens.types";
 
-const Kittens = ({ name, id, email, phone, website }) => {
+const Kittens: React.FC<IKittens> = ({
+  name,
+  id,
+  email,
+  phone,
+  website
+}): JSX.Element => {
   return (
     <div className="kittens">
       <img
