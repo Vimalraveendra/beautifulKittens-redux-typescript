@@ -1,10 +1,10 @@
 // Describing the shape of the kittens  slice of state
 export interface IKittens {
-  id: Number;
-  name: String;
-  email: String;
-  website: String;
-  phone: Number;
+  id: number;
+  name: string;
+  email: string;
+  website: string;
+  phone: number;
 }
 
 export interface IKittensArray {
