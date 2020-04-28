@@ -8,8 +8,9 @@ export interface IKittens {
 }
 
 export interface IKittensArray {
-  kittens: Array<IKittens>;
-  isPending: string;
+  kittensArray: Array<IKittens>;
+  isPending: boolean;
+  error: string;
 }
 
 export const REQUEST_KITTENS_PENDING = "REQUEST_KITTENS_PENDING ";
