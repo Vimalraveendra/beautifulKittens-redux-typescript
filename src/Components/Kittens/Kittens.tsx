@@ -2,6 +2,8 @@ import React from "react";
 import "./Kittens.scss";
 import { IKittens } from "../../Redux/Kittens/Kittens.types";
 
+// here we are going to specify the type of the paramters 
+// and the return type ,so here we are returning jsx element
 const Kittens: React.FC<IKittens> = ({
   name,
   id,
