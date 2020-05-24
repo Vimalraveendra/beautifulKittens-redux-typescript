@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/beautifulKittens-redux-typescript/static/css/main.d7ac86f4.chunk.css",
+    "main.js": "/beautifulKittens-redux-typescript/static/js/main.6a99f8d7.chunk.js",
+    "main.js.map": "/beautifulKittens-redux-typescript/static/js/main.6a99f8d7.chunk.js.map",
+    "runtime-main.js": "/beautifulKittens-redux-typescript/static/js/runtime-main.83cc88d5.js",
+    "runtime-main.js.map": "/beautifulKittens-redux-typescript/static/js/runtime-main.83cc88d5.js.map",
+    "static/js/2.27565145.chunk.js": "/beautifulKittens-redux-typescript/static/js/2.27565145.chunk.js",
+    "static/js/2.27565145.chunk.js.map": "/beautifulKittens-redux-typescript/static/js/2.27565145.chunk.js.map",
+    "index.html": "/beautifulKittens-redux-typescript/index.html",
+    "precache-manifest.d54acae260a1ce8b23165e32c66ed99f.js": "/beautifulKittens-redux-typescript/precache-manifest.d54acae260a1ce8b23165e32c66ed99f.js",
+    "service-worker.js": "/beautifulKittens-redux-typescript/service-worker.js",
+    "static/css/main.d7ac86f4.chunk.css.map": "/beautifulKittens-redux-typescript/static/css/main.d7ac86f4.chunk.css.map",
+    "static/js/2.27565145.chunk.js.LICENSE.txt": "/beautifulKittens-redux-typescript/static/js/2.27565145.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/beautifulKittens-redux-typescript/static/media/MinecraftTen-VGORe.c40de641.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.83cc88d5.js",
+    "static/js/2.27565145.chunk.js",
+    "static/css/main.d7ac86f4.chunk.css",
+    "static/js/main.6a99f8d7.chunk.js"
+  ]
+}
