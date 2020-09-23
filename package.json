@@ -17,6 +17,7 @@
     "@types/sass": "^1.16.0",
     "gh-pages": "^2.2.0",
     "lodash": "^4.17.19",
+    "node-forge": "^0.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
